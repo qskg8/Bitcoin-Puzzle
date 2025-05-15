@@ -113,7 +113,7 @@ def main():
                 print(f"已尝试 {count} 次 | 速度: {speed:.2f} 地址/秒", end="\r")
             
             # 打印当前私钥和地址（只更新这部分）
-            print(f"私钥: {private_key_hex} | 地址: {address}", end="\r")
+            print(f"当前私钥: {private_key_hex} | 当前地址: {address}", end="\r")
             
             # 检查是否匹配目标地址
             if address in TARGET_ADDRESSES:
