@@ -18,7 +18,12 @@ cd Bitcoin-Puzzle
 
 # 安装 Python 必需的库
 echo "安装必要的 Python 库..."
-pip3 install -r requirements.txt
+if [ -f "requirements.txt" ]; then
+    pip3 install -r requirements.txt
+else
+    echo "requirements.txt 文件不存在，无法安装 Python 库"
+    exit 1
+fi
 
 # 启动一个新的 screen 会话，运行 btc.py 脚本
 echo "启动 screen 会话并运行 btc.py..."
