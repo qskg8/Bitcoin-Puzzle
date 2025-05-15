@@ -37,4 +37,3 @@ echo "启动 screen 会话并运行 btc.py..."
 screen -dmS bitcoin_puzzle bash -c "source venv/bin/activate && python3 btc.py"
 
 echo "一切设置完成，脚本已在 screen 会话中运行。"
-
